@@ -9,7 +9,7 @@ class Category extends Model
 {
     //
     public function questions(){
-        $this->hasMany(Question::class);
+       return $this->hasMany(Question::class);
     }
 
     

@@ -12,14 +12,14 @@ class Reply extends Model
     //
 
     public function user(){
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function like(){
-        $this->hasMany(Like::class);
+        return $this->hasMany(Like::class);
     }
 
     public function question(){
-        $this->belongsTo(Question::class);
+        return $this->belongsTo(Question::class);
     }
 }
